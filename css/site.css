@@ -103,7 +103,7 @@ ul.link-list a::before {
     width: 100%;
     transform: translateX(-100%);
     background-color: var(--key-color);
-    transition: background-color 400ms ease-out, transform 180ms ease-out;
+    transition: background-color 400ms ease-out 140ms, transform 180ms ease-out;
 }
 
 ul.link-list a:hover::before {
