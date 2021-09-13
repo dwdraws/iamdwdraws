@@ -4,19 +4,16 @@
     --key-color: #ff3a69;
 }
 
-html,
-body {
+html {
     height: 100%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
     background-color: var(--key-color);
 }
 
 body {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
     color: #fff;
     background-color: var(--background-color);
     background: linear-gradient(
@@ -24,13 +21,12 @@ body {
         var(--background-color-alt) 0%,
         var(--background-color) 40%
     );
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 main {
     max-width: 40ch;
-    margin-top: 4em;
+    margin: 4em 0 10em 0;
     padding: 0 2em;
 }
 
@@ -82,8 +78,6 @@ ul.link-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    margin-bottom: 6em;
 }
 
 ul.link-list a {
