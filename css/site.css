@@ -9,6 +9,7 @@ body {
     height: 100%;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
+    background: var(--background-color);
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     color: #fff;
-    background: #302b48;
+    background: var(--background-color-alt);
     background: linear-gradient(
         to bottom right,
         var(--background-color-alt) 0%,
