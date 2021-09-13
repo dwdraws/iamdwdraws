@@ -1,0 +1,125 @@
+:root {
+    --background-color: #141225;
+    --background-color-alt: #2e2c47;
+    --key-color: #ff3a69;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background: #302B48;
+    background: linear-gradient(to bottom, var(--background-color-alt) 0%, var(--background-color) 20%);
+}
+
+main {
+    max-width: 40ch;
+    margin-top: 3em;
+    padding: 0 2em;
+}
+
+img.profile {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    font-size: 0.75em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    border-bottom: solid 0.25em var(--background-color-alt);
+    color: #fff;
+}
+
+h1 span {
+    color: var(--key-color);
+}
+
+p {
+    padding-left: 1em;
+    border-left: solid var(--key-color) 0.25em;
+}
+
+p a {
+    display: inline-block;
+    color: var(--key-color);
+    transition: color 80ms ease-in-out;
+}
+
+p a:hover {
+    color: #fff;
+    
+}
+
+p a:active {
+    color: var(--key-color);
+    transform: translateY(4%);
+}
+
+ul.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul.link-list a {
+    position: relative;
+    margin: 0.25em 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--key-color);
+    transition: color 1200ms ease-out, transform 240ms ease-out;
+}
+
+ul.link-list a:hover {
+    color: var(--background-color);
+    transform: translateX(4%);
+}
+
+ul.link-list a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    background-color: var(--key-color);
+    transition: background-color 400ms ease-out, transform 180ms ease-out;
+}
+
+ul.link-list a:hover::before {
+    transform: translateX(0);
+    background-color: #fff;
+}
+
+ul.link-list a li {
+    position: relative;
+    padding: 0.5em 0.75em;
+}
+
+ul.link-list a li::before {
+    content: "\27BC";
+    margin-right: 0.25em;
+}
+
+ul.link-list a li span {
+    margin-left: 0.25em;
+    font-size: 0.75em;
+    font-weight: bold;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
